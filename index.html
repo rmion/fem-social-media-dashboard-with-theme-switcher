@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+</head>
+<body class="dark">
+  <header>
+    <div class="container">
+      <div>
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>  
+      </div>
+      <button type="button" aria-pressed="false">
+        Dark Mode
+        <span class="unselected">
+          <i class="fas fa-toggle-off"></i>
+        </span>
+        <span>
+          <i class="fas fa-toggle-on"></i>
+        </span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <article>
+      <div class="container">
+        <h2>Overview - Today</h2>
+        <dl>
+          <div class="major tile facebook">
+            <dt class="sr-only">Facebook</dt>
+            <dd>
+              <p class="handle">
+                <img src="./images/icon-facebook.svg" alt="" />
+                <span>@nathanf</span>
+              </p>
+              <p class="amount">1987</p>
+              <p class="subject">Followers</p>
+              <p class="positive trend"><span class="sr-only">Up </span>12 Today</p>
+            </dd>  
+          </div>
+          <div class="major tile twitter">
+            <dt class="sr-only">Twitter</dt>
+            <dd>
+              <p class="handle">
+                <img src="./images/icon-twitter.svg" alt="" />
+                <span>@nathanf</span>
+              </p>
+              <p class="amount">1044</p>
+              <p class="subject">Followers</p>
+              <p class="positive trend"><span class="sr-only">Up </span>99 Today</p>
+            </dd>  
+          </div>
+          <div class="major tile instagram">
+            <dt class="sr-only">Instagram</dt>
+            <dd>
+              <p class="handle">
+                <img src="./images/icon-instagram.svg" alt="" />
+                <span>@realnathanf</span>
+              </p>
+              <p class="amount">11k</p>
+              <p class="subject">Followers</p>
+              <p class="positive trend"><span class="sr-only">Up </span>1099 Today</p>
+            </dd>  
+          </div>
+          <div class="major tile youtube">
+            <dt class="sr-only">Youtube</dt>
+            <dd>
+              <p class="handle">
+                <img src="./images/icon-youtube.svg" alt="" />
+                <span>Nathan F.</span>
+              </p>
+              <p class="amount">8239</p>
+              <p class="subject">Subscribers</p>
+              <p class="negative trend"><span class="sr-only">Down </span>144 Today</p>
+            </dd>  
+          </div>
+        </dl>    
+      </div>
+    </article>
+    <article>
+      <div class="container">
+        <h2>Details - Today</h2>
+        <dl>
+          <div class="tile-group">
+            <dt class="sr-only">Facebook</dt>
+            <dd>
+              <dl class="minor tile facebook">
+                <dt class="stat">Page Views</dt>
+                <dd>
+                  <p class="amount">87</p>
+                  <p class="positive trend"><span class="sr-only">Up </span>3%</p>
+                </dd>
+              </dl>
+            </dd>
+            <dd>
+              <dl class="minor tile facebook">
+                <dt class="stat">Likes</dt>
+                <dd>
+                  <p class="amount">52</p>
+                  <p class="positive trend"><span class="sr-only">Down </span>2%</p>
+                </dd>
+              </dl>
+            </dd>
+          </div>
+          <div class="tile-group">
+            <dt class="sr-only">Twitter</dt>
+            <dd>
+              <dl class="minor tile twitter">
+                <dt class="stat">Retweets</dt>
+                <dd>
+                  <p class="amount">117</p>
+                  <p class="positive trend"><span class="sr-only">Up </span>303%</p>
+                </dd>
+              </dl>
+            </dd>
+            <dd>
+              <dl class="minor tile twitter">
+                <dt class="stat">Likes</dt>
+                <dd>
+                  <p class="amount">507</p>
+                  <p class="positive trend"><span class="sr-only">Up </span>553%</p>
+                </dd>
+              </dl>
+            </dd>
+          </div>
+          <div class="tile-group">
+            <dt class="sr-only">Instagram</dt>
+            <dd>
+              <dl class="minor tile instagram">
+                <dt class="stat">Profile Views</dt>
+                <dd>
+                  <p class="amount">52k</p>
+                  <p class="positive trend"><span class="sr-only">Up </span>1375%</p>
+                </dd>
+              </dl>
+            </dd>
+            <dd>
+              <dl class="minor tile instagram">
+                <dt class="stat">Likes</dt>
+                <dd>
+                  <p class="amount">5462</p>
+                  <p class="positive trend"><span class="sr-only">Up </span>2257%</p>
+                </dd>
+              </dl>
+            </dd>
+          </div>
+          <div class="tile-group">
+            <dt class="sr-only">Youtube</dt>
+            <dd>
+              <dl class="minor tile youtube">
+                <dt class="stat">Total Views</dt>
+                <dd>
+                  <p class="amount">1407</p>
+                  <p class="positive trend"><span class="sr-only">Down </span>12%</p>
+                </dd>
+              </dl>
+            </dd>
+            <dd>
+              <dl class="minor tile youtube">
+                <dt class="stat">Likes</dt>
+                <dd>
+                  <p class="amount">107</p>
+                  <p class="positive trend"><span class="sr-only">Down </span>19%</p>
+                </dd>
+              </dl>
+            </dd>
+          </div>
+        </dl>    
+      </div>
+    </article>
+  </main>
+  <footer>
+    <p class="attribution">
+      <small>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://rmion.com" target="_blank">Robert Mion</a>.</small>
+    </p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('[aria-pressed]');
+
+    toggle.addEventListener('click', (e) => {  
+      let pressed = e.target.getAttribute('aria-pressed') === 'true';
+      e.target.setAttribute('aria-pressed', String(!pressed));
+      document.querySelectorAll('button > span').forEach(el => el.classList.toggle('unselected'))
+      document.body.classList.toggle('dark')
+    });
+  </script>
+</body>
+</html>
